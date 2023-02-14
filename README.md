@@ -18,7 +18,8 @@ Visual mode mappings:
 ### Usage
 - Type some keywords, then press `<leader>u` to map them all globally,
 - or select lines with `keywords` that you want to map and press `<leader>u`
-- or go to line with `keywords` that you want to map an press `<leader>l`
+- or go to line with `keywords` that you want to map an press `<leader>lu`
+- same logic applies for mapping the `unicode` back to `keywords`, but instead of `u` part of the command you type `k`
 
 ### Keyword mapping list
 The full list of mappings from `keywords` to `unicode` can be accessed by `:h txt2utf.txt`.
