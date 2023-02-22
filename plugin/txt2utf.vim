@@ -1,9 +1,9 @@
-nnoremap <leader>k :call  UTFtoTXT(1,line("$"))<CR>
+nnoremap <leader>k :call UTFtoTXT(line("."),line("."))<CR>
 vnoremap <leader>k :call  UTFtoTXT(line("'<"),line("'>"))<CR>
+nnoremap <leader>gk :call  UTFtoTXT(1,line("$"))<CR>
 nnoremap <leader>u :call  TXTtoUTF(1,line("$"))<CR>
 vnoremap <leader>u :call  TXTtoUTF(line("'<"),line("'>"))<CR>
 nnoremap <leader>lu :call TXTtoUTF(line("."),line("."))<CR>
-nnoremap <leader>lk :call UTFtoTXT(line("."),line("."))<CR>
 
 function! UTFtoTXT(begin,end)
   let s:line = line(".")
